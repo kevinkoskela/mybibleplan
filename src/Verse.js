@@ -9,5 +9,5 @@ class Verse extends React.Component {
       </div>
     )
   }
-  export default Verse;
-}
+};
+export default Verse;

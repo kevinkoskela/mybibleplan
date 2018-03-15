@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import Verse from './Verse';
 
 //const API = 'http://niv84.com/bibleapi.php?url=https://bibles.org/v2/verses/eng-GNTD:Acts.8.34.js';
 //const APIKEY = '&key=wfZdpay5cJlTlo1kFLqdHB288LLghEZjKk9vcihP';
@@ -44,11 +43,13 @@ class App extends React.Component {
       { (this.state.isLoading === true) ? (
         <div>Loading...</div>
       ) : (
-        <Verse reference={this.state.reference} verse={this.state.verse} />
+        <div>
+          Reference: {this.state.reference}
+          Verse: {this.state.verse}
+        </div>
       )}
-      
     </div>
   )
 }
+};
 export default App;
-}
